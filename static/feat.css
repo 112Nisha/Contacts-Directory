@@ -1,0 +1,124 @@
+footer {
+    font-size: 20px;
+    position: sticky;
+    background: linear-gradient(to bottom right, #b5d9ff, #77aaff);
+    clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 100%, 0 100%);
+    padding: 40px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+header {
+    background-color: #77aaff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+h2 {
+    padding: 20px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../static/bg.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+button {
+    font-size: 25px;
+    background-color: #0077b6;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+table {
+    border-spacing: 10px 10px;
+}
+
+h1 {
+    font-size: 45px;
+    text-align: center;
+
+}
+
+.tableee {
+    text-align: left;
+    font-size: 25px;
+    padding: 20px;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+}
+
+td,
+th {
+    border: 1px solid black;
+    padding: 8px;
+    font-size: 20px;
+}
+
+a.head {
+    text-decoration: none;
+    text-align: right;
+    margin-right: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.slideshow-container {
+    position: relative;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slideshow-image {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    margin-left: auto;
+    margin-right: auto;
+    margin: auto;
+}
+
+
+.slideshow-image.active {
+    margin-left: auto;
+    margin-right: auto;
+    margin: auto;
+    opacity: 1;
+}
+
+pre {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    margin: auto;
+    align-items: center;
+    margin-left: 200px;
+    margin-right: 200px;
+}

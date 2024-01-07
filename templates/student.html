@@ -1,0 +1,37 @@
+<html><head><title>Student Data</title><link rel="stylesheet" href="/static/feat.css"></head><body><header>
+            <a href="/"><img height="98px" src="/static/logo.jpeg"></a> 
+            <h2>International Institute of Information Technology, Hyderabad</h2>
+        </header><br>
+        <button id="search_button" style="float: right; margin-right: 25px">Find A Student</button>
+        <button id="add_button" style="float: right; margin-right: 25px">Add A Student</button>
+        <button id="update_button" style="float: right; margin-right: 25px">Update Student Info</button>
+        <br>
+        <br>
+        <br>
+<h1>Students Information</h1><table class="tableee" align="center"><tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Roll No.</th>
+        <th>Phone No.</th>
+        <th>Branch</th>
+        <th>CGPA</th>
+        <th>House</th></tr><tr><td>Nikhita</td><td>nikhita@outlook.com</td><td>2022101234</td><td>9998887700</td><td>CSE</td><td>10.0</td><td>Aakash</td></tr><tr><td>Advay Gupta</td><td>advay@outlook.com</td><td>2022123456</td><td>9632587410</td><td>CSD</td><td>10.0</td><td>Agni</td></tr><tr><td>Nishita Kannan</td><td>nishita.kannan@outlook.com</td><td>2022101112</td><td>7207824159</td><td>CSE</td><td>10.0</td><td>Vayu</td></tr><tr><td>Shivani Kulkarni</td><td>shivani@gmail.com</td><td>20221056893</td><td>9512368740</td><td>CSE</td><td>10.0</td><td>Vayu</td></tr><tr><td>Rahul</td><td>rahul.kamal@outlook.com</td><td>2022165489</td><td>9638452170</td><td>ECE</td><td>6.8</td><td>Agni</td></tr><tr><td>Mayura</td><td>mayura@hotmail.com</td><td>2022654987</td><td>856314790</td><td>ECD</td><td>8.3</td><td>Prithvi</td></tr><tr><td>Rajeev Kumar</td><td>rajeev@hotmail.com</td><td>2022654987</td><td>7563241890</td><td>CHD</td><td>6.1</td><td>Vayu</td></tr><tr><td>Mayanka</td><td>mayanka@outlook.com</td><td>2022658498</td><td>7654312980</td><td>CND</td><td>7.5</td><td>Agni</td></tr><tr><td>Emily Johnson</td><td>emily.johnson@example.com</td><td>201215101101</td><td>555-123-4567</td><td>Computer Science</td><td>3.7</td><td>Red</td></tr><tr><td>Ethan Davis</td><td>ethan.davis@example.com</td><td>102102102</td><td>555-234-5678</td><td>Mechanical Engineering</td><td>3.2</td><td>Blue</td></tr><tr><td>Olivia Williams</td><td>olivia.williams@example.com</td><td>1031031031</td><td>555-345-6789</td><td>Electrical Engineering</td><td>3.5</td><td>Green</td></tr><tr><td>Yash Shinde</td><td>shinde@gmail.com</td><td>2022101117</td><td>9874563210</td><td>CSD</td><td>10.0</td><td>Prithvi</td></tr><tr><td>Arya Topale</td><td>topale@gmail.com</td><td>2022111111</td><td>9854120367</td><td>ECE</td><td>9.5</td><td>Vayu</td></tr><tr><td>Ananya Madireddy</td><td>ananya@yahoo.com</td><td>2022101059</td><td>8838838830</td><td>CSE</td><td>8.5</td><td>Agni</td></tr><tr><td>Aanvik Bhatnagar</td><td>aanvik@gmail.com</td><td>7876905432</td><td>9205376780</td><td>CSE</td><td>8.94</td><td>Prithvi</td></tr><tr><td>Sujal Deoda</td><td>sujal@susu.com</td><td>2022114455</td><td>8765412039</td><td>CHD</td><td>8.3</td><td>Vayu</td></tr><tr><td>Paridhi Jain</td><td>paridhi@gmail.com</td><td>2022145789</td><td>8739021456</td><td>CSE</td><td>9.1</td><td>Prithvi</td></tr><tr><td>Yash Bhutada</td><td>bhutada@gmail.com</td><td>2022111005</td><td>6786789678</td><td>ECE</td><td>9.15</td><td>Agni</td></tr><tr><td>Kushal Shah</td><td>kushal@yahoo.com</td><td>2022157896</td><td>8874521036</td><td>CSE</td><td>10.0</td><td>Prithvi</td></tr><tr><td>Emma Watson</td><td>emma@yahoo.com</td><td>2010875469</td><td>8746321590</td><td>CND</td><td>5.0</td><td>White</td></tr></table><script>
+        var button = document.getElementById("add_button");
+        button.addEventListener("click", function (event) {
+            window.location.href = '/add_students.html';
+        });
+
+        var button1 = document.getElementById("search_button");
+        button1.addEventListener("click", function (event) {
+            window.location.href = '/search_stud.html';  // Update the href here
+        });
+
+        var button2 = document.getElementById("update_button");
+        button2.addEventListener("click", function (event) {
+            window.location.href = '/update_students.html';  // Update the href here
+        });
+            </script><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><footer>
+            Copyright © 2023, International Institute of Information Technology, Hyderabad. All rights reserved.
+            <br>
+            Contact us at info@iiit.ac.in
+        </footer></body></html>

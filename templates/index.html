@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    IIIT Contact Directory
+  </title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='feat.css') }}">
+</head>
+
+<body class="animated-background">
+
+  <header>
+    <a href="{{ url_for('index') }}"><img height="98px" src="{{ url_for('static', filename='logo.jpeg') }}"></a>
+    <h2>International Institute of Information Technology, Hyderabad</h2>
+  </header>
+  <br>
+  <div class="slideshow-container">
+    <img class="slideshow-image active" src="../static/index2.jpeg">
+    <img class="slideshow-image" src="../static/index1.jpeg">
+    <img class="slideshow-image" src="../static/index3.jpeg">
+  </div>
+
+  <br>
+
+  <pre>
+            The International Institute of Information Technology, Hyderabad (IIIT-H) is a prominent research and 
+            educational institution located in Hyderabad, India. Established in 1998, it focuses on the areas of 
+            information technology and computer science, aiming to provide world-class education, research, and 
+            training to its students.
+
+            Some key features of IIIT-Hyderabad include:
+
+            Academic Programs: IIIT-H offers a range of undergraduate, postgraduate, and doctoral programs in
+            various disciplines, such as computer science, electronics and communication engineering, civil 
+            engineering, and bioinformatics. The institute is known for its cutting-edge curriculum and 
+            interdisciplinary approach, fostering innovation and creativity among students.
+
+            Research Excellence: IIIT-Hyderabad is renowned for its research capabilities, with numerous 
+            research centers and labs dedicated to various fields, including artificial intelligence, 
+            robotics, natural language processing, VLSI design, computer vision, and more. The institute
+            collaborates with both industry and academia, contributing to advancements in technology and knowledge.
+
+            Faculty: The institute boasts a strong team of experienced faculty members, many of whom have 
+            earned their doctorates from prestigious universities worldwide. They are actively engaged
+             in research and maintain strong connections with the global academic community.
+
+            Campus Life: IIIT-H has a vibrant campus life, with modern facilities, including state-of-the-art 
+            classrooms, laboratories, libraries, sports facilities, and hostels. The campus fosters a sense 
+            of community among students, with numerous clubs, events, and cultural activities throughout the year.
+
+            Industry Connections: IIIT-Hyderabad maintains strong ties with leading national and international
+            companies and research organizations, providing students with valuable networking opportunities,
+            internships, and placements.
+
+            Overall, IIIT-Hyderabad is a premier institution in India, known for its excellence in academics,
+            research, and innovation in the field of information technology and computer science.
+            
+            Our web app provides an easy and accessible way for students and faculty to access important
+            information about individual students. Our database stores crucial information such as the 
+            student's roll number, name, email, and contact information. This information is available to
+            both students and faculty, making it easy to stay connected and informed. With this database, 
+            faculty can easily access contact information for their students, making it simple to communicate
+            important information or updates. Similarly, students can review their own information and ensure
+            that their contact information is up to date. Our web app offers a user-friendly interface that
+            makes it simple to find the information you need quickly and easily.
+
+            Here is how you can access the information you need. Unauthorised poeple cannot change data.
+        </pre>
+  <table align="center">
+    <th style="border: 0px;">
+      <h2>
+        <button class="Student">Student Database</button>
+        <button class="Faculty">Faculty Database</button>
+      </h2>
+    </th>
+  </table>
+  <footer>
+    Copyright © 2023, International Institute of Information Technology, Hyderabad. All rights reserved.
+    <br>
+    Contact us at info@iiit.ac.in
+  </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var student = document.querySelector(".Student");
+      student.addEventListener("click", function (event) {
+        window.location.href = "{{ url_for('student') }}";
+      });
+
+      var faculty = document.querySelector(".Faculty");
+      faculty.addEventListener("click", function (event) {
+        window.location.href = "{{ url_for('faculty') }}";
+      });
+    });
+
+    const images = document.querySelectorAll('.slideshow-image');
+    let currentIndex = 0;
+
+    setInterval(() => {
+      images[currentIndex].classList.remove('active');
+      currentIndex = (currentIndex + 1) % images.length;
+      images[currentIndex].classList.add('active');
+    }, 3000);
+  </script>
+
+</body>
+
+</html>

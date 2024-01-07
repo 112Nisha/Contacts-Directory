@@ -1,28 +1,65 @@
-ISS-Hackathon-team-25
-Welcome to IIIT Contact Directory
+# Contacts Directory
 
-This is a web application developed for storing, searching, and updating data in a systematic and efficient way.
+This web application is designed to manage and organize information about students and faculty within IIIT Hyderabad. It allows for easy access to student and faculty details and provides functionalities to update existing information, add new entries, and search the database efficiently.
 
-To run this application, run "app.py" and open the link generated in the terminal in any browser. This will take you to the home page "index.html," which displays a few photos of our institute followed by some write-up about the institute and our website. What follows next are 2 buttons:
+## Getting Started
 
-Student Database: This button takes you to the student information page.
-Faculty Database: This button takes you to the faculty information page.
+To run this application:
+- Clone the repository.
+- Run `app.py`.
+- Open the generated link in any web browser.
 
-The student information page displays details of students, i.e, rollno, phoneno, cgpa, house, branch. This information is available for everyone to view. This page has 3 options:
+## Usage
 
-Update student information: Upon clicking this button, it will ask for a key (unique to every student, much like a password). For our website, we have given this as the id in the database. It can be manipulated by a hash function to generate stronger keys or we can have a password field in the database that will be randomly generated. Only when the key is valid, the information of the student (name, phone, and email) can be updated. This, ofcourse, is to prevent misuse of the site to modify data.
+### Home Page
 
-Add student: Adding students to the database will only be permitted to the admin office who will have a key (we have the key here as "appaji_key"). On clicking the add student button, a prompt will be displayed which will ask for a key and only when it is correct, it will redirect to the add student page where you can add all the information of a particular student.
+Upon accessing the application, the home page (`index.html`) welcomes users with institute photos and relevant information. Also provided are options to navigate to the following:
+- Student Database: Accesses the student information page.
+- Faculty Database: Accesses the faculty information page.
 
-Find a student: This button allows you to search the database based on all the parameters, namely name, email, phone, house, branch, and cgpa. You would have to select from a dropdown the field you want to search based on whatever you need to look for. It displays all the information with respect to the search field, e.g., search by cgpa, and the table displayed would contain all the details of the people with that required cgpa.
+### Student Database
 
+The Student Information Page displays the following student details: 
+- Roll number
+- Phone number
+- CGPA
+- House
+- Branch
 
-The faculty information page displays the details of faculty, such as name, email, phoneno, major research area, office hours, and office. This page also has three buttons that can be clicked on and is very similar to the student:
+#### Functionalities
 
-Update faculty information: When this button is clicked, a prompt asks for a key that all of the faculty have (which we have here as aftab_key). This page has options of email, phone, major research area, office hours, and office that can be changed.
+- **Update Student Information:**
+  Requires a unique key for authentication before allowing updates to student details (name, phone, email). 
+- **Add Student:**
+  Allows the addition of new student information. Reserved for admin office and is authenticated using a specific key (`appaji_key`). 
+- **Find a Student:**
+  Enables searching the database based on various parameters such as name, email, phone, house, branch, and CGPA.
 
-Add a faculty: When this button is clicked, a prompt asks for a key that we assume only the admin has. The details that can be filled are name, email, phoneno, major research area, office hours, and office.
+### Faculty Database
 
-Find a faculty: This button allows the user to filter based on the fields of name, email, phoneno, major research area, office hours, and office.
+The Faculty Information Page shows the following faculty details: 
+- Name
+- Email
+- Phone number
+- Major Research area
+- Office hours
+- Office
 
-The key, cannot be found by trying to inspect the webpage. Again, this is to prevent misuse of the site.
+#### Functionalities
+
+- **Update Faculty Information:**
+  Requires a key (e.g., `aftab_key`) possessed by all faculty members for updating their information.
+- **Add Faculty:**
+  Allows the addition of new faculty information. Restricted to admin access with a specific key. 
+- **Find a Faculty:**
+  Enables filtering based on fields like name, email, phone number, major research area, office hours, and office.
+
+## Security Measures
+
+### Key Authentication
+
+Certain functionalities (update/add) require a specific key for authorization, preventing unauthorized access. For our website, we have given this as the id in the database. It can be manipulated by a hash function to generate stronger keys, or we can have a password field in the database that will be randomly generated.
+
+### Webpage Inspection Protection
+
+Measures are in place to safeguard keys from being revealed through webpage inspection, ensuring site security.
